@@ -1,0 +1,161 @@
+@import url('../athena/style.css');
+
+
+/*
+Theme Name: lajanda-simple
+Theme URI:http://www.lajana.org/
+Author: Amit Kvint
+Author URI: http://webifish.com/
+Version: 0.0.1
+Template: athena
+Description: child theme for La Janda Spanish School 
+ */
+
+
+h1 {
+
+	color:#8ca500;
+	text-shadow: 0.1em 0.1em #ccc
+
+}
+  /* ------------------------ Col Full Adjustments ------------------------ */
+.col-full {
+}
+
+ /* ------------------------ Booking Button ------------------------ */
+.booking-button {
+
+	float: right;
+}
+
+ /* ------------------------ Social Icons Typography Settings------------------------ */
+
+
+@font-face {
+	font-family: 'social-media';
+	src:url('fonts/social-media.eot');
+	src:url('fonts/social-media.eot?#iefix') format('embedded-opentype'),
+		url('fonts/social-media.svg#social-media') format('svg'),
+		url('fonts/social-media.woff') format('woff'),
+		url('fonts/social-media.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'social-media';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-social"]:before {
+*/
+.icon-socialpinterest:before, .icon-socialfacebook:before, .icon-socialmail:before, .icon-socialtwitter:before, .icon-socialphone:before, .icon-socialplay:before, .icon-socialbrightness-medium:before {
+	font-family: 'social-media';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-socialpinterest:before {
+	content: "\e000";
+}
+.icon-socialfacebook:before {
+	content: "\e002";
+}
+.icon-socialmail:before {
+	content: "\e003";
+}
+.icon-socialtwitter:before {
+	content: "\e004";
+}
+.icon-socialphone:before {
+	content: "\e001";
+}
+.icon-socialplay:before {
+	content: "\e005";
+}
+.icon-socialbrightness-medium:before {
+	content: "\e006";
+}
+
+ /* ------------------------ Social Links Menu ------------------------ */
+
+.social-links {
+
+	float: right;
+	padding-top: 25px;
+	width: 215px;
+	z-index: -9999;
+	padding-left: 15px;
+}
+
+.social-links a {
+		font-size: 2.5em;
+		color: #000;
+}
+
+.social-links a.phone-number {
+	font-size: 1.5em;
+}
+
+ /* ------------------------ Top Nav ------------------------ */
+
+#top ul.nav > li a {
+
+
+}
+
+ /* ------------------------ Top Div & Logo ------------------------ */
+#top { 
+
+	background: #fff; 
+}
+
+ .top-logo {
+ 	width: 480px;
+ 	height: 136px;
+ 	margin-left: 40px;
+ 	float: left;
+ 	background: url(images/logo_text.jpg) no-repeat;
+ }
+
+ /* ------------------------ Courses Single Page ------------------------ */
+
+.single-product .summary h1 {
+	color: #8ca500;
+	text-shadow: 0.1em 0.1em #ccc;
+}
+
+.single-product .summary .description p {
+	color: #000;
+}
+
+ /* ------------------------ Courses Archive Page ------------------------ */
+
+ul.products {
+
+	float: right;
+
+}
+ul.products .product .product-hover {
+
+}
+
+.mini-cart {
+
+	display: none;
+}
+#header {
+	background-image: none;
+	background-color: rgba(140, 165, 0, 0.3) ;
+}
